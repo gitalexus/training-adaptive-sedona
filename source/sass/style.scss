@@ -1,0 +1,10 @@
+// Файл с часто используемыми элементами
+@use './global/bootstrap.scss';
+
+// Базовые блоки
+@use './components/visually-hidden.scss';
+
+// Блоки
+@use './components/block-grid.scss';
+@use './components/block.scss';
+@use './components/main-title.scss';

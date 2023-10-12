@@ -9,7 +9,8 @@ import autoprefixer from 'autoprefixer';
 import terser from 'gulp-terser'; // используется для уменьшения размера HTML файла (удаляет пробелы и т.п.)
 import sourcemaps from 'gulp-sourcemaps';
 import imagemin from 'gulp-imagemin';
-import squooshCreate from 'gulp-squoosh';
+import gulpAvif from 'gulp-avif';
+import webp from 'gulp-webp';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore'; // используется для создания SVG спрайтов
 import del from 'del';
@@ -46,19 +47,19 @@ export const scripts = () => {
 
 const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
-    // .pipe(squoosh())
     .pipe(imagemin())
     .pipe(gulp.dest('build/img'))
 }
 
-const createImages = () => {
+const createImagesAVIF = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
-    .pipe(squooshCreate({
-      encodeOptions: {
-        webp: {},
-        avif: {},
-      }
-    }))
+    .pipe(gulpAvif())
+    .pipe(gulp.dest('build/img'))
+}
+
+const createImagesWEBP = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+    .pipe(webp())
     .pipe(gulp.dest('build/img'))
 }
 
@@ -73,7 +74,6 @@ const svg = () => {
     .pipe(gulp.dest('build/img'));
 }
 
-// Create SVG Sprite
 
 const sprite = () => {
   return gulp.src('source/img/sprite-icons/**/*.svg')
@@ -129,7 +129,8 @@ export const build = gulp.series(
   gulp.parallel(
     copy,
     optimizeImages,
-    createImages,
+    createImagesAVIF,
+    createImagesWEBP,
     styles,
     html,
     scripts,
@@ -143,7 +144,8 @@ export default gulp.series(
   gulp.parallel(
     copy,
     copyImages,
-    createImages,
+    createImagesAVIF,
+    createImagesWEBP,
     styles,
     html,
     scripts,

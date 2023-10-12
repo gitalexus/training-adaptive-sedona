@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- ссылки на шрифты -->
   <!-- <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
-  <link rel="preload" href="css/style.min.css" as="style">
+  <!-- <link rel="preload" href="css/style.min.css" as="style"> -->
   <!-- <link rel="preload" href="js/scripts.js" as="script"> -->
 
   <link rel="icon" href="img/favicons/favicon.png"> <!-- 32х32 -->
@@ -14,10 +14,32 @@
   <link rel="manifest" href="manifest.webmanifest">
 
   <!-- можно оставить этот вариант если нет необходимости в preload -->
-  <!-- <link href="css/style.min.css" rel="stylesheet"> -->
+  <link href="css/style.min.css" rel="stylesheet">
   <title>Document title</title>
 </head>
 <body>
+  <!-- в сетке надо предусмотреть промежуток для логотипа в середине меню -->
+  <header class="header">
+    <a class="logo" href="index.html">
+      <img src="" alt="Логотип - седона">
+      <nav class="main-navigation">
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#">Главная</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#">Фото и видео</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#">Форма Отзыва</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </a>
+  </header>
 
 </body>
 </html>

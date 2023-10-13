@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ссылки на шрифты -->
+  <!-- <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
+  <!-- <link rel="preload" href="css/style.min.css" as="style"> -->
+  <!-- <link rel="preload" href="js/scripts.js" as="script"> -->
+
+  <link rel="icon" href="img/favicons/favicon.png"> <!-- 32х32 -->
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <!-- можно оставить этот вариант если нет необходимости в preload -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <title>Document title</title>
+</head>
+<body>
+  <!-- в сетке надо предусмотреть промежуток для логотипа в середине меню -->
+  <!-- шапка главной и других блоков отличается (разметка) -->
+  <header class="header">
+    <!-- logo -->
+    <a class="logo" href="index.html">
+      <img src="" alt="Логотип - седона">
+    </a>
+    <!-- navigation -->
+    <nav class="main-navigation">
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#">Главная</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#">Фото и видео</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#">Форма Отзыва</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="hero-inner">
+      <img src="#" alt="Седона">
+    </div>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Фото и видео</h1>
+    <p class="description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+    <article class="media">
+      <img src="#" alt="">
+      <h2 class="media__title">неродные просторы</h2>
+      <p class="media__author-lable">Автор фото: <span class="media__author-value">Борис</span></p>
+      <p>
+        <button class="media__like-button"><span class="visually-hidden">Поставить лайк</span></button>
+        <b class="media__like-counter">1350</b>
+      </p>
+    </article>
+    <article class="media media--big">
+      <img src="#" alt="">
+      <h2 class="media__title">Местная растительность</h2>
+      <p class="media__author-lable">Автор фото: <span class="media__author-value">Сергей</span></p>
+      <p>
+        <button class="media__like-button"><span class="visually-hidden">Поставить лайк</span></button>
+        <b class="media__like-counter">143</b>
+      </p>
+    </article>
+    <article class="media">
+      <img src="#" alt="">
+      <h2 class="media__title">Дорога на север</h2>
+      <p class="media__author-lable">Автор фото: <span class="media__author-value">Петр</span></p>
+      <p>
+        <button class="media__like-button"><span class="visually-hidden">Поставить лайк</span></button>
+        <b class="media__like-counter">96</b>
+      </p>
+    </article>
+    <article class="media">
+      <img src="#" alt="">
+      <h2 class="media__title">Мост дьявола</h2>
+      <p class="media__author-lable">Автор фото: <span class="media__author-value">Антон</span></p>
+      <p>
+        <button class="media__like-button"><span class="visually-hidden">Поставить лайк</span></button>
+        <b class="media__like-counter">254</b>
+      </p>
+    </article>
+    <article class="promo">
+      <b class="promo__caption">Все еще сомневаетесь?</b>
+      <p class="promo__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <video class="promo__video" src="#">
+        <img src="#" alt="Видео каньона">
+      </video>
+
+    </article>
+
+  </main>
+  <footer class="footer">
+    <p class="hashtag">#VisitSedona</p>
+    <div class="social">
+      <a href="button button--social button--vk"><span class="visually-hidden">Вконтакте</span></a>
+      <a href="button button--social button--telegram"><span class="visually-hidden">Телеграм</span></a>
+      <a href="button button--social button--youtube"><span class="visually-hidden">Youtube</span></a>
+    </div>
+    <div class="copyright">
+      <p class="copyright__text">Разработано</p>
+      <a href="https://htmlacademy.ru">
+        <img src="#" alt="Логотип htmlacademy">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>

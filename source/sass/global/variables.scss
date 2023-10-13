@@ -1,5 +1,30 @@
-/* Пример переменных */
+/* Цвета */
+$bg-color: #ffffff;
+$main-color: #81b3d2;
+$button-text-color: #ffffff;
+$main-color-hover: #669ec0;
+$main-color-active: #5496bd;
 
-// $main-color: #fbd3fa;
-// $second-color: #6acdff;
-// $text: #000025;
+$hover-opacity: 0.3;
+
+$button-color: #ffffff;
+$button-color-hover: rgba($button-color, 0.6);
+$button-color-active: rgba($button-color, 0.3);
+
+$button-burger-color: $main-color;
+$button-burger-color-hover: rgba($button-burger-color, 0.6);
+$button-burger-color-active: rgba($button-burger-color, 0.3);
+
+$button-bg-color: #81b3d2;
+$button-bg-color-hover: #669ec0;
+$button-bg-color-active: #5496bd;
+
+
+$mobile-navigation-color: #ffffff;
+
+/* Размеры */
+$mobile-width: 320px;
+
+$header-height: 56px;
+
+$hero-height: 389px;

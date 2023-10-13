@@ -1,0 +1,16 @@
+@use "../global/bootstrap.scss" as *;
+
+.button-colors {
+  color: $button-color;
+  background-color: $button-bg-color;
+
+  &:hover {
+    color: $button-color-hover;
+    background-color: $button-bg-color-hover;
+  }
+
+  &:active {
+    color: $button-color-active;
+    background-color: $button-bg-color-active;
+  }
+}

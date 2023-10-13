@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ссылки на шрифты -->
+  <!-- <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
+  <!-- <link rel="preload" href="css/style.min.css" as="style"> -->
+  <!-- <link rel="preload" href="js/scripts.js" as="script"> -->
+
+  <link rel="icon" href="img/favicons/favicon.png"> <!-- 32х32 -->
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <!-- можно оставить этот вариант если нет необходимости в preload -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <title>Document title</title>
+</head>
+<body>
+  <!-- в сетке надо предусмотреть промежуток для логотипа в середине меню -->
+  <!-- шапка главной и других блоков отличается (разметка) -->
+  <header class="header">
+    <!-- logo -->
+    <a class="logo" href="index.html">
+      <img src="" alt="Логотип - седона">
+    </a>
+    <!-- navigation -->
+    <nav class="main-navigation">
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#">Главная</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#">Фото и видео</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#">Форма Отзыва</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="hero-inner">
+      <img src="#" alt="Седона">
+    </div>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Оставьте свой отзыв</h1>
+    <p class="review__text"></p>
+    <form class="review">
+      <!-- introduce -->
+      <fieldset class="review__group">
+        <legend class="review__group-title">Представьтесь:</legend>
+        <p class="field-container">
+          <label class="form-label" for="name">Имя*:</label>
+          <input class="form-field" type="text" name="name" id="name">
+        </p>
+        <p class="field-container">
+          <label class="form-label" for="surname">Фамилия*:</label>
+          <input class="form-field" type="text" name="surname" id="surname">
+        </p>
+        <p class="field-container">
+          <label class="form-label" for="patronymic">Отчество*:</label>
+          <input class="form-field" type="text" name="patronymic" id="patronymic">
+        </p>
+      </fieldset>
+      <!-- contact inform -->
+      <fieldset class="review__group">
+        <legend class="review__group-title">Контактная информация:</legend>
+        <p class="field-container">
+          <label class="form-label" for="phone">Контактный телефон*:</label>
+          <input class="form-field" type="text" name="phone" id="phone" placeholder="Введите телефон">
+        </p>
+        <p class="field-container">
+          <label class="form-label" for="email">Электронная почта*:</label>
+          <input class="form-field" type="text" name="email" id="email" placeholder="Введите e-mail">
+        </p>
+      </fieldset>
+      <!-- general impression  -->
+      <fieldset class="review__group">
+        <legend class="review__group-title">Ваше общее впечатление:</legend>
+        <p class="field-container">
+          <input class="form-field" type="radio" checked name="evaluation" id="positive" value="positive">
+          <label class="form-label" for="positive">Скорее положительное</label>
+        </p>
+        <p class="field-container">
+          <input class="form-field" type="radio" name="evaluation" id="negative" value="negative">
+          <label class="form-label" for="negative">Скорее отрицательно</label>
+        </p>
+        <p class="field-container">
+          <input class="form-field" type="radio" name="evaluation" id="dontknow" value="dontknow">
+          <label class="form-label" for="dontknow">Затрудняюсь ответить</label>
+        </p>
+      </fieldset>
+
+      <!-- visited attractions -->
+      <fieldset class="review__group">
+        <legend class="review__group-title">посещенные достопримечательности:</legend>
+        <p class="field-container">
+          <input class="form-field" checked type="checkbox" name="devils-bridge" id="devils-bridge" value="positive">
+          <label class="form-label" for="devils-bridge">Мост Дьявола</label>
+        </p>
+        <p class="field-container">
+          <input class="form-field" checked type="checkbox" name="mountain-bell" id="mountain-bell" value="positive">
+          <label class="form-label" for="mountain-bell">Гора-Колокол</label>
+        </p>
+        <p class="field-container">
+          <input class="form-field" checked type="checkbox" name="slide-park" id="slide-park" value="positive">
+          <label class="form-label" for="slide-park">Слайд-парк</label>
+        </p>
+        <p class="field-container">
+          <input class="form-field" type="checkbox" name="red-rocks" id="red-rocks" value="positive">
+          <label class="form-label" for="red-rocks">Красные скалы</label>
+        </p>
+      </fieldset>
+
+      <!-- describe your emotions -->
+      <fieldset class="review__group">
+        <legend class="review__group-title">Опишите свои эмоции:</legend>
+        <textarea class="form-textaria" name="emotions" id="" cols="30" rows="10"></textarea>
+      </fieldset>
+      <button class="button" type="submit">Отправить отзыв</button>
+      <p class="form__comment">* — обязательные поля</p>
+    </form>
+
+  </main>
+  <footer class="footer">
+    <p class="hashtag">#VisitSedona</p>
+    <div class="social">
+      <a href="button button--social button--vk"><span class="visually-hidden">Вконтакте</span></a>
+      <a href="button button--social button--telegram"><span class="visually-hidden">Телеграм</span></a>
+      <a href="button button--social button--youtube"><span class="visually-hidden">Youtube</span></a>
+    </div>
+    <div class="copyright">
+      <p class="copyright__text">Разработано</p>
+      <a href="https://htmlacademy.ru">
+        <img src="#" alt="Логотип htmlacademy">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>

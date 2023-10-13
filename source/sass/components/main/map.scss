@@ -1,0 +1,10 @@
+@use "../../global/bootstrap.scss" as *;
+
+.map {
+  height: 350px;
+  // width: 100%;
+
+  &--nojs {
+    background: url("../img/map-desktop.jpg") no-repeat center;
+  }
+}

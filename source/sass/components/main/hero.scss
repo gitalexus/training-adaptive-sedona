@@ -1,0 +1,19 @@
+@use "../../global/bootstrap.scss" as *;
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+  min-height: $hero-height;
+  background: url("../img/hero-bg-mobile.jpg") no-repeat center -35px;
+
+  &::after {
+    position: absolute;
+    width: 1200%;
+    height: 57px;
+    bottom: 0;
+    background: url("../img/vignette.svg") no-repeat center bottom;
+  }
+}
+

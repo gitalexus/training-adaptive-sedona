@@ -1,0 +1,104 @@
+@use "../../global/bootstrap.scss" as *;
+
+.advantages {
+  text-align: center;
+}
+
+.advantages__item {
+  &--important {
+    color: #ffffff;
+    background-color: $main-color;
+    padding-top: 32px;
+  }
+
+  &--last {
+    padding: 24px;
+    background-color: #eeeeee;
+  }
+
+  &--last:not(:last-child) {
+    border-bottom: 1px solid #d6d6d6;
+  }
+
+  &--with-icons {
+    padding: 8px 18px 17px 65px;
+    text-align: left;
+  }
+
+  &--icon-house {
+    padding-top: 31px;
+    background: url("../img/icons/adv-house.svg") no-repeat 18px 24px;
+    background-size: 40px 40px;
+  }
+
+  &--icon-food {
+    background: url("../img/icons/adv-burger.svg") no-repeat 18px 0;
+    background-size: 40px 40px;
+  }
+
+  &--icon-souvenirs {
+    background: url("../img/icons/adv-present.svg") no-repeat 18px 0;
+    background-size: 40px 40px;
+    margin-bottom: 29px;
+  }
+
+  &:first-child {
+    position: relative;
+    padding-top: 54px;
+  }
+
+  &:first-child::before {
+    position: absolute;
+    top: -7px;
+    transform: translateX(-50%);
+    content: "";
+    width: 640px;
+    height: 37px;
+    background: url("../img/vignette-advantages.svg") no-repeat center top;
+  }
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 11px;
+}
+
+.advantages__number {
+  margin: 0;
+  margin-bottom: 17px;
+  font-size: 14px;
+  line-height: 21px;
+
+  &--important {
+    color: #ffffff;
+  }
+}
+
+.advantages__slogan {
+  margin-bottom: 35px;
+}
+
+.advantages__text {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.advantages__image {
+  display: block;
+  height: 260px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.advantages__desc {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+
+  &--important {
+    color: #ffffff;
+    margin-bottom: 38px;
+  }
+}
+

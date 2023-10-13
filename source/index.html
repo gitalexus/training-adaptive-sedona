@@ -15,31 +15,143 @@
 
   <!-- можно оставить этот вариант если нет необходимости в preload -->
   <link href="css/style.min.css" rel="stylesheet">
-  <title>Document title</title>
+  <title>Седона</title>
 </head>
 <body>
   <!-- в сетке надо предусмотреть промежуток для логотипа в середине меню -->
+  <!-- шапка главной и других блоков отличается (разметка) -->
   <header class="header">
-    <a class="logo" href="index.html">
-      <img src="" alt="Логотип - седона">
-      <nav class="main-navigation">
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">Главная</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">Фото и видео</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">Форма Отзыва</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-    </a>
+    <!-- logo -->
+    <div class="header__logo-wrapper">
+      <a class="logo" href="index.html">
+        <img class="logo__image" src="img/logos/logo-sedona.svg" width="185" height="96" alt="Логотип - седона">
+      </a>
+    </div>
+    <!-- navigation -->
+    <nav class="main-navigation main-navigation--closed">
+      <ul class="main-navigation__list rl">
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#">Главная</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#">Фото и видео</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#">Форма Отзыва</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="menu-button">
+      <!-- icon-burger -->
+      <svg class="menu-button__icon menu-button__icon--burger" width="22" height="22" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M28 6H4V10H28V6Z" />
+        <path d="M28 14H4V18H28V14Z" />
+        <path d="M28 22H4V26H28V22Z" />
+      </svg>
+      <!-- icon-cross -->
+      <svg class="menu-button__icon menu-button__icon--cross button-colors" width="22" height="22" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M29 6.15315L25.7207 3L16 12.3468L6.27928 3L3 6.15315L12.7207 15.5L3 24.8468L6.27928 28L16 18.6532L25.7207 28L29 24.8468L19.2793 15.5L29 6.15315Z" />
+      </svg>
+      <span class="visually-hidden">Кнопка управления меню</span>
+    </button>
   </header>
+  <!-- сложность в том что кнопки интерактивные и необходимо их менять синхронно с открытием меню -->
 
+  <main>
+    <h1 class="visually-hidden">Веб сайт города Седона</h1>
+    <section class="hero">
+      <img class="hero__welocome-text" width="282" height="214" src="img/hero-text.svg" alt="Изображение коньена. Добро пожаловать в Седону.">
+    </section>
+    <section class="advantages">
+      <div class="container">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <p class="advantages__slogan title">СЕДОНА — небольшой городок&nbsp;в&nbsp;АРИЗОНЕ, заслуживающий большего!</p>
+        <p class="advantages__text text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
+      <ul class="advantages__list rl">
+        <li class="advantages__item advantages__item--important">
+          <div class="container">
+            <h3 class="advantages__title title">НАСТОЯЩИЙ ГОРОДОК</h3>
+            <p class="advantages__number advantages__number--important">— №1 —</p>
+            <p class="advantages__desc advantages__desc--important">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+          </div>
+          <img class="advantages__image" src="img/advantage-1-mobile.jpg" width="520" height="260" alt="Вид в историческом центре Седоны">
+        </li>
+        <li class="advantages__item advantages__item--with-icons advantages__item--icon-house">
+          <h3 class="advantages__title title">Жилье</h3>
+          <p class="advantages__desc text">Рекомендуем пожить в настоящем&nbsp;мотеле, все как в кино!</p>
+        </li>
+        <li class="advantages__item advantages__item--with-icons advantages__item--icon-food">
+          <h3 class="advantages__title title">Еда</h3>
+          <p class="advantages__desc text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+        </li>
+        <li class="advantages__item advantages__item--with-icons advantages__item--icon-souvenirs">
+          <h3 class="advantages__title title">Сувениры</h3>
+          <p class="advantages__desc text">Не только китайского, но и местного производства!</p>
+        </li>
+        <li class="advantages__item advantages__item--important">
+          <div class="container">
+            <h3 class="advantages__title title">Там есть мост дьявола</h3>
+            <p class="advantages__number advantages__number--important">— №2 —</p>
+            <p class="advantages__desc advantages__desc--important">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
+          <img class="advantages__image" src="img/advantage-2-mobile.jpg" width="520" height="260" alt="Вид в историческом центре Седоны">
+        </li>
+        <li class="advantages__item advantages__item--last">
+          <h3 class="advantages__title title">НЕБОЛЬШАЯПЛОЩАДЬ</h3>
+          <p class="advantages__number">— №3 —</p>
+          <p class="advantages__desc">ВСЕ интересные места находятся очень близко</p>
+        </li>
+        <li class="advantages__item advantages__item--last">
+          <h3 class="advantages__title title">КРАСИВАЯ ДОРОГА</h3>
+          <p class="advantages__number">— №4 —</p>
+          <p class="advantages__desc">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+        </li>
+        <li class="advantages__item advantages__item--last">
+          <h3 class="advantages__title title">МАЛО ТУРИСТОВ</h3>
+          <p class="advantages__number">— №5 —</p>
+          <p class="advantages__desc">Большинство едет в гранд каньон и толпится там</p>
+        </li>
+      </ul>
+    </section>
+    <section class="seach-hotels">
+      <h2 class="visually-hidden">Поиск гостиницы</h2>
+      <p class="seach-hotels__caption title">Заинтересовались?</p>
+      <p class="seach-hotels__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <a class="button button-colors seach-hotels__button" href="#">Найти гостиницу</a>
+    </section>
+    <!-- вставка карты -->
+    <section class="map map--nojs">
+      <h2 class="visually-hidden">Месторасположение на карте</h2>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer__hashtag title">#VisitSedona</p>
+    <div class="footer__social">
+      <a class="button button-colors button--social button--vk" href="#">
+        <img src="../img/icons/vk.svg" alt="">
+        <span class="visually-hidden">Вконтакте</span>
+      </a>
+      <a class="button button-colors button--social button--telegram" href="#">
+        <img src="../img/icons/telegram.svg" alt="">
+        <span class="visually-hidden">Телеграм</span>
+      </a>
+      <a class="button button-colors button--social button--youtube" href="#">
+        <img src="../img/icons/youtube.svg" alt="">
+        <span class="visually-hidden">Youtube</span>
+      </a>
+    </div>
+    <div class="footer__copyright">
+      <a class="footer__copyright-link" href="https://htmlacademy.ru">
+        <span>Разработано</span>
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16.1338 2H16.0446L4 3.19062V24.1965L16.0446 31L28 24.1965V3.19062L16.1338 2ZM26.3048 12.2903L16.0446 6.50733V6.42229H15.9554L15.8662 6.33724V6.42229L5.69517 12.2903V4.63636L15.9554 3.61584L26.3048 4.63636V12.2903ZM15.9554 7.78299L26.2156 13.4809L22.2007 15.6921L15.8662 12.1202V13.3109L21.1301 16.2874L20.3271 16.7126L15.8662 14.1613V15.3519L19.2565 17.3079L18.5428 17.7331L15.8662 16.2023V17.393L17.5613 18.3284L15.9554 19.2639L5.78439 13.566L15.9554 7.78299ZM5.69517 14.8416L15.8662 20.6246V21.4751L8.81784 17.478V18.6686L15.9554 22.7507V23.6862L8.81784 19.6891V20.8798L15.9554 24.9619L23.1822 20.7947V16.3724L26.2156 14.6716V23.176L15.9554 29.044L5.69517 23.261V14.8416Z" />
+        </svg>
+      </a>
+    </div>
+  </footer>
 </body>
 </html>

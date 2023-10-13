@@ -1,0 +1,43 @@
+@use "../../global/bootstrap.scss" as *;
+
+.footer {
+  padding: 28px 18px 22px;
+}
+
+.footer__hashtag {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.footer__social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 40px;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__copyright-link {
+  display: flex;
+  padding: 0 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #000000;
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+}

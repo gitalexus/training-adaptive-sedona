@@ -1,0 +1,6 @@
+@use "../global/bootstrap.scss" as *;
+
+.container {
+  min-width: $mobile-width;
+  padding: 0 18px;
+}

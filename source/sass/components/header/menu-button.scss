@@ -1,0 +1,42 @@
+@use "../../global/bootstrap.scss" as *;
+
+.menu-button {
+  position: absolute;
+  z-index: 20;
+  top: 17px;
+  right: 20px;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu-button__icon {
+  &--burger {
+    display: none;
+    color: $button-burger-color;
+
+    &:hover {
+      color: $button-burger-color-hover;
+    }
+
+    &:active {
+      color: $button-burger-color-active;
+    }
+  }
+
+  &--cross {
+    display: block;
+  }
+}
+
+/* замена кнопок при закрытом меню */
+.main-navigation--closed ~ .menu-button .menu-button__icon--burger {
+  display: block;
+}
+
+.main-navigation--closed ~ .menu-button .menu-button__icon--cross {
+  display: none;
+}

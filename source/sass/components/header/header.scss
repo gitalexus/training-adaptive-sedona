@@ -1,0 +1,20 @@
+@use "../../global/bootstrap.scss" as *;
+
+.header {
+  position: relative;
+  min-height: $header-height;
+  width: 100%;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.header__logo-wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  min-width: $mobile-width;
+  width: 100%;
+  height: fit-content;
+  z-index: 1;
+}
+

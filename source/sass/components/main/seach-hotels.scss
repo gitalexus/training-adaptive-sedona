@@ -1,0 +1,15 @@
+@use "../../global/bootstrap.scss" as *;
+
+.seach-hotels {
+  text-align: center;
+  padding: 59px 18px 49px;
+}
+
+.seach-hotels__caption {
+  margin: 0;
+  margin-bottom: 96px;
+}
+
+.seach-hotels__text {
+  display: none;
+}

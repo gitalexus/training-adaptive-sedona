@@ -1,10 +1,22 @@
 // Файл с часто используемыми элементами
-@use './global/bootstrap.scss';
+@use "./global/bootstrap.scss";
 
 // Базовые блоки
-@use './components/visually-hidden.scss';
+@use "./components/visually-hidden.scss";
 
 // Блоки
-// @use './components/block-grid.scss';
-// @use './components/block.scss';
-// @use './components/main-title.scss';
+@use "./components/title.scss";
+@use "./components/text.scss";
+@use "./components/container.scss";
+@use "./components/button.scss";
+@use "./components/button-colors.scss";
+@use "./components/header/header.scss";
+@use "./components/header/main-navigation.scss";
+@use "./components/header/menu-button.scss";
+@use "./components/header/logo.scss";
+@use "./components/main/hero.scss";
+@use "./components/main/advantages.scss";
+@use "./components/main/seach-hotels.scss";
+@use "./components/main/map.scss";
+@use "./components/footer/footer.scss";
+
